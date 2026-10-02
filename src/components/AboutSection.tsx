@@ -1,5 +1,6 @@
 import React from 'react';
 import { HeartHandshake, Compass, Coffee, MessageSquare, ExternalLink, Sparkles } from 'lucide-react';
+import { boutiqueImg } from '../data/mockData';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-6 relative group">
             <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900 aspect-[4/3]">
               <img
-                src="/src/assets/images/boutique_games_interior_1790862736684.jpg"
+                src={boutiqueImg}
                 alt="Les rayons de la boutique Le Meeple Conquérant à Dives-sur-Mer"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

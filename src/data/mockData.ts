@@ -1,4 +1,10 @@
 import { GameSlot, GameItem, GalleryPhoto } from '../types';
+import heroImg from '../assets/images/hero_boardgame_cafe_1790862715138.jpg';
+import boutiqueImg from '../assets/images/boutique_games_interior_1790862736684.jpg';
+import tcgImg from '../assets/images/tcg_tournament_cards_1790862748538.jpg';
+import boardgameImg from '../assets/images/boardgame_evening_friends_1790862764071.jpg';
+
+export { heroImg, boutiqueImg, tcgImg, boardgameImg };
 
 export const INITIAL_SLOTS: GameSlot[] = [
   {
@@ -251,28 +257,28 @@ export const BOUTIQUE_GAMES: GameItem[] = [
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
     id: 'photo-1',
-    src: '/src/assets/images/hero_boardgame_cafe_1790862715138.jpg',
+    src: heroImg,
     title: 'L\'ambiance chaleureuse du Café-Jeux',
     description: 'Des tables en bois massif, une lumière douce et un catalogue de plus de 200 jeux en libre accès.',
     tag: 'Le Café-Jeux',
   },
   {
     id: 'photo-2',
-    src: '/src/assets/images/boutique_games_interior_1790862736684.jpg',
+    src: boutiqueImg,
     title: 'La Boutique aux 2 000 Références',
     description: 'Du jeu d\'ambiance familial aux jeux experts les plus pointus, nos rayons regorgent de pépites sélectionnées.',
     tag: 'La Boutique',
   },
   {
     id: 'photo-3',
-    src: '/src/assets/images/tcg_tournament_cards_1790862748538.jpg',
+    src: tcgImg,
     title: 'Les Nocturnes TCG du Vendredi',
     description: 'Magic, Lorcana, Pokémon, One Piece : tournois amicaux et tables de prêt pour les curieux de 19h à minuit.',
     tag: 'Soirées TCG',
   },
   {
     id: 'photo-4',
-    src: '/src/assets/images/boardgame_evening_friends_1790862764071.jpg',
+    src: boardgameImg,
     title: 'Partage, rires et communauté',
     description: 'Des soirées ouvertes à tous, que vous veniez seul ou en groupe, avec animateurs pour vous guider.',
     tag: 'Communauté',

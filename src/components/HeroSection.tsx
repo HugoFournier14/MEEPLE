@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, ShoppingBag, MapPin, Dice5, Users, Sparkles, ChevronDown } from 'lucide-react';
 import { MeepleCanvas } from './MeepleCanvas';
+import { heroImg } from '../data/mockData';
 
 interface HeroSectionProps {
   onScrollToReservation: () => void;
@@ -33,7 +34,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Background Image with Measured Scrim & Vignette */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_boardgame_cafe_1790862715138.jpg"
+          src={heroImg}
           alt="Ambiance chaleureuse du café-jeux Le Meeple Conquérant à Dives-sur-Mer"
           className="w-full h-full object-cover object-center scale-105 animate-pulse duration-[10000ms]"
           referrerPolicy="no-referrer"

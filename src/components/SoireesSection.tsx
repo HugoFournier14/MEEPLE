@@ -1,6 +1,7 @@
 import React from 'react';
 import { GameSlot } from '../types';
 import { Sparkles, Users, Clock, Flame, CalendarPlus, ChevronRight } from 'lucide-react';
+import { tcgImg, boardgameImg } from '../data/mockData';
 
 interface SoireesSectionProps {
   slots: GameSlot[];
@@ -50,7 +51,7 @@ export const SoireesSection: React.FC<SoireesSectionProps> = ({ slots, onSelectS
             {/* Visual Header Image */}
             <div className="relative h-56 rounded-2xl overflow-hidden mb-6 border border-white/10">
               <img
-                src="/src/assets/images/tcg_tournament_cards_1790862748538.jpg"
+                src={tcgImg}
                 alt="Soirée TCG cartes au Meeple Conquérant"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -140,7 +141,7 @@ export const SoireesSection: React.FC<SoireesSectionProps> = ({ slots, onSelectS
             {/* Visual Header Image */}
             <div className="relative h-56 rounded-2xl overflow-hidden mb-6 border border-white/10">
               <img
-                src="/src/assets/images/boardgame_evening_friends_1790862764071.jpg"
+                src={boardgameImg}
                 alt="Soirée jeux de société au Meeple Conquérant"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

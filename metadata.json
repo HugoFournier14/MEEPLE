@@ -1,0 +1,6 @@
+{
+  "name": "Le Meeple Conquérant - Boutique & Café-Jeux à Dives-sur-Mer",
+  "description": "Boutique spécialisée et café-jeux à Dives-sur-Mer (Normandie). +2000 références, soirées jeux de société le samedi, soirées TCG le vendredi et réservations en ligne.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

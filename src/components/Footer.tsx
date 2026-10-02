@@ -153,7 +153,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin }) => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} Le Meeple Conquérant. Tous droits réservés.</p>
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} Le Meeple Conquérant. Tous droits réservés.</p>
+            <span aria-hidden="true" className="hidden sm:inline text-slate-700">·</span>
+            <p>
+              Site créé par{' '}
+              <a
+                href="https://hugofournier.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-amber-400 transition-colors font-medium underline underline-offset-2"
+              >
+                hugofournier.fr
+              </a>
+            </p>
+          </div>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <button
               type="button"
